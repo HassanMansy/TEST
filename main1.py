@@ -24,3 +24,4 @@ def list_users():
     with engine.connect() as conn:
         result = conn.execute(select(users))
         return [dict(row._mapping) for row in result.fetchall()]
+# This code provides a simple user registration and listing API using FastAPI and SQLAlchemy.
